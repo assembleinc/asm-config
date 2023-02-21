@@ -1,0 +1,50 @@
+{
+  "version": "0.0.30-beta.1",
+  "name": "@assemble-inc/eslint-config-asm",
+  "main": "index.js",
+  "description": "Assemble front-end linting and formatting rules",
+  "author": "Assemble Frontend Team <engineering@assembleinc.com> (https://assembleinc.com)",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/assembleinc/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/assembleinc/eslint-config/issues"
+  },
+  "homepage": "https://github.com/assembleinc/eslint-config/tree/main/eslint-config#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=12.0.0",
+    "npm": ">= 6.0.0",
+    "yarn": ">= 1.19.1"
+  },
+  "scripts": {
+    "test": "bash ../verifyArtifacts.sh",
+    "publish:package": "npm test; npm publish;"
+  },
+  "dependencies": {
+    "@assemble-inc/prettier-config-asm": "0.0.9",
+    "@babel/core": "^7.20.2",
+    "@babel/eslint-parser": "^7.19.1",
+    "@typescript-eslint/eslint-plugin": "^5.42.1",
+    "@typescript-eslint/parser": "^5.42.1",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.0.0 || ^7.0.0 || ^8.0.0-0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-import-resolver-typescript": "^3.5.2",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
+    "eslint-plugin-testing-library": "^5.9.1",
+    "prettier": ">= 2",
+    "typescript": "^4.8.4"
+  },
+  "devDependencies": {
+    "eslint-plugin-autofix": "^1.1.0",
+    "eslint-plugin-import": "^2.27.5"
+  }
+}

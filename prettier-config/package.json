@@ -1,0 +1,31 @@
+{
+  "version": "0.0.9",
+  "name": "@assemble-inc/prettier-config-asm",
+  "main": "index.js",
+  "description": "Assemble front-end formatting rules",
+  "author": "Assemble Frontend Team <engineering@assembleinc.com> (https://assembleinc.com)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/assembleinc/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/assembleinc/eslint-config/issues"
+  },
+  "homepage": "https://github.com/assembleinc/eslint-config/tree/main/prettier-config#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": "^12.22.0 || ^14.17.0 || >=16.0.0",
+    "npm": ">= 6.0.0",
+    "yarn": ">= 1.19.1"
+  },
+  "scripts": {
+    "test": "bash ../verifyArtifacts.sh",
+    "publish:package": "npm test; npm publish;"
+  },
+  "peerDependencies": {
+    "prettier": "~2.7.1"
+  }
+}

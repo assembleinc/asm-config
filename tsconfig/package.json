@@ -1,0 +1,19 @@
+{
+  "name": "@assemble-inc/tsconfig",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "Assemble Boilerplate tsconfig",
+  "author": "Assemble Frontend Team <engineering@assembleinc.com> (https://assembleinc.com)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/assembleinc/asm-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/assembleinc/asm-ui/issues"
+  },
+  "homepage": "https://github.com/assembleinc/asm-ui/blob/main/README.md",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

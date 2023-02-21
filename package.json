@@ -1,0 +1,7 @@
+{
+  "name": "config",
+  "version": "1.0.0",
+  "description": "Container repo for tsconfig, eslint and prettier configs",
+  "main": "index.js",
+  "license": "MIT"
+}
