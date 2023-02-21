@@ -7,12 +7,12 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/assembleinc/eslint-config.git"
+    "url": "git+https://github.com/assembleinc/asm-config.git"
   },
   "bugs": {
-    "url": "https://github.com/assembleinc/eslint-config/issues"
+    "url": "https://github.com/assembleinc/asm-config/issues"
   },
-  "homepage": "https://github.com/assembleinc/eslint-config/tree/main/eslint-config#readme",
+  "homepage": "https://github.com/assembleinc/asm-config/tree/main/eslint-config#readme",
   "publishConfig": {
     "access": "public"
   },

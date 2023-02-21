@@ -3,5 +3,17 @@
   "version": "1.0.0",
   "description": "Container repo for tsconfig, eslint and prettier configs",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/assembleinc/asm-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/assembleinc/asm-config/issues"
+  },
+  "homepage": "https://github.com/assembleinc/asm-config/blob/main/README.md",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }

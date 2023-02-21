@@ -6,12 +6,12 @@
   "author": "Assemble Frontend Team <engineering@assembleinc.com> (https://assembleinc.com)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/assembleinc/asm-ui.git"
+    "url": "git+https://github.com/assembleinc/asm-config.git"
   },
   "bugs": {
-    "url": "https://github.com/assembleinc/asm-ui/issues"
+    "url": "https://github.com/assembleinc/asm-config/issues"
   },
-  "homepage": "https://github.com/assembleinc/asm-ui/blob/main/README.md",
+  "homepage": "https://github.com/assembleinc/asm-config/blob/main/README.md",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
