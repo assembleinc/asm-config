@@ -2,10 +2,12 @@ Assemble Inc. Frontend Code Standards
 
 ## This repository contains resources for ensuring consistency and quality across different Assemble projects.
 
-### ESLint Configuration
-
-Assemble has developed a custom ESLint configuration file that should be used on all greenfield Assemble Projects. This package extends ESLint recommended settings with some specific modifications selected by the Assemble dev team. You can read more [here](./eslint-config/README.md).
-
-### Prettier Configuration
-
-The Assemble prettier configuration and editor configuration files are used to maintain consistent coding style across Assemble projects. This package extends the recommended settings with some minor adjustments for team preferences. You can read more [here](./prettier-config/README.md).
+### TSConfig
+Install by running
+```
+yarn add @assemble-inc/tsconfig
+```
+then in the root of your project, create a `tsconfig.json` file (`touch tsconfig.json`), and extend the `@assemble-inc/tsconfig` package by adding the line
+```
+"extends": "@assemble-inc/tsconfig/tsconfig.json"
+```

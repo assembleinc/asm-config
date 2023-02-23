@@ -2,6 +2,7 @@
   "name": "@assemble-inc/tsconfig",
   "version": "0.1.0",
   "license": "MIT",
+  "main": "tsconfig.json",
   "description": "Assemble Boilerplate tsconfig",
   "author": "Assemble Frontend Team <engineering@assembleinc.com> (https://assembleinc.com)",
   "repository": {
