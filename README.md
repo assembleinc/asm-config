@@ -21,9 +21,9 @@ The Assemble TypeScript configuration file is used to maintain consistent typesc
 1. Clone this repo
 2. Create a branch: `git checkout -b developer-name/component-name`
 3. Make some changes
-4. Test your changes in Storybook
+4. Test your changes
 5. Push your branch and open a Pull Request
-6. Let the team know in #asm-component-libraries
+6. Request a reviewer, or let the team know
 #
 ## Publishing <a id='publishing'></a>
 
