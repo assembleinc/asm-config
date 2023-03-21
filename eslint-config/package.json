@@ -1,5 +1,5 @@
 {
-  "version": "0.0.30",
+  "version": "0.0.31",
   "name": "@assemble-inc/eslint-config-asm",
   "main": "index.js",
   "description": "Assemble front-end linting and formatting rules",
@@ -23,7 +23,7 @@
   },
   "scripts": {
     "test": "bash ../verifyArtifacts.sh",
-    "publish:package": "npm test; npm publish;"
+    "publish:package": "yarn test; yarn publish;"
   },
   "dependencies": {
     "@assemble-inc/prettier-config-asm": "0.0.9",
