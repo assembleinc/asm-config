@@ -1,5 +1,5 @@
 {
-  "version": "0.0.31",
+  "version": "0.0.32",
   "name": "@assemble-inc/eslint-config-asm",
   "main": "index.js",
   "description": "Assemble front-end linting and formatting rules",
