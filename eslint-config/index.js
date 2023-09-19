@@ -86,7 +86,6 @@ module.exports = {
         "@typescript-eslint/no-inferrable-types": "warn",
         // this one has options if it becomes an issue in loops
         "@typescript-eslint/no-unsafe-assignment": "error",
-        "@typescript-eslint/await-thenable": "error",
         "@typescript-eslint/consistent-type-definitions": ["error", "type"],
         "@typescript-eslint/prefer-optional-chain": "warn",
         "@typescript-eslint/require-array-sort-compare": "error",
