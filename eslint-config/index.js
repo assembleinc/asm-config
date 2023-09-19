@@ -78,10 +78,21 @@ module.exports = {
       rules: {
         "no-use-before-define": "off",
         "@typescript-eslint/no-use-before-define": ["error"],
-        '@typescript-eslint/explicit-function-return-type': 'off',
+        '@typescript-eslint/explicit-function-return-type': 'warn',
         '@typescript-eslint/explicit-module-boundary-types': 'off',
-        '@typescript-eslint/no-explicit-any': 'off',
+        '@typescript-eslint/no-explicit-any': 'error',
         '@typescript-eslint/ban-ts-comment': 'off',
+        "@typescript-eslint/no-unnecessary-condition": "error",
+         "@typescript-eslint/no-inferrable-types": "warn",
+    // this one has options if it becomes an issue in loops
+    "@typescript-eslint/no-unnecessary-condition": "warn",
+    "@typescript-eslint/no-unsafe-assignment": "error",
+    "@typescript-eslint/await-thenable": "error",
+    "@typescript-eslint/consistent-type-definitions": ["error", "type"],
+    "@typescript-eslint/no-unnecessary-condition": "error",
+    "@typescript-eslint/prefer-optional-chain": "warn",
+    "@typescript-eslint/prefer-string-starts-ends-with": "error",
+    "@typescript-eslint/require-array-sort-compare": "error",
         "prettier/prettier": "warn",
         "react/jsx-filename-extension": 'off',
         "import/extensions": [
