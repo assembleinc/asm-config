@@ -78,7 +78,6 @@ module.exports = {
       rules: {
         "no-use-before-define": "off",
         "@typescript-eslint/no-use-before-define": ["error"],
-        '@typescript-eslint/explicit-function-return-type': 'warn',
         '@typescript-eslint/explicit-module-boundary-types': 'off',
         '@typescript-eslint/no-explicit-any': 'error',
         '@typescript-eslint/ban-ts-comment': 'off',
