@@ -1,5 +1,5 @@
 {
-  "version": "0.0.33",
+  "version": "0.1.0",
   "name": "@assemble-inc/eslint-config-asm",
   "main": "index.js",
   "description": "Assemble front-end linting and formatting rules",
@@ -22,11 +22,11 @@
     "yarn": ">= 1.19.1"
   },
   "scripts": {
-    "test": "bash ../verifyArtifacts.sh",
+    "test": "bash ./verifyArtifacts.sh",
     "publish:package": "yarn test; yarn publish;"
   },
   "dependencies": {
-    "@assemble-inc/prettier-config-asm": "0.0.9",
+    "@assemble-inc/prettier-config-asm": "0.1.1",
     "@babel/core": "^7.20.2",
     "@babel/eslint-parser": "^7.19.1",
     "@typescript-eslint/eslint-plugin": "^5.42.1",
