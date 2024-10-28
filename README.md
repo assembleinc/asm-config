@@ -1,4 +1,4 @@
-Assemble Inc. Frontend Code Standards
+ASMBL Frontend Code Standards
 
 ## This repository contains resources for ensuring consistency and quality across different ASMBL projects.
 
@@ -11,10 +11,10 @@ ASMBL has developed a custom ESLint configuration file that should be used on al
 The ASMBL prettier configuration and editor configuration files are used to maintain consistent coding style across ASMBL projects. This package extends the recommended settings with some minor adjustments for team preferences. You can read more [here](./prettier-config/README.md).
 
 ### Tailwind Configuration
-The ASMBL Tailwind configuration files is used to maintain consistent coding style across Assemble tailwind projects. This package extends the recommended settings with some minor adjustments for team preferences.
+The ASMBL Tailwind configuration files is used to maintain consistent coding style across ASMBL tailwind projects. This package extends the recommended settings with some minor adjustments for team preferences.
 
 ### TSConfig
-The ASMBL TypeScript configuration file is used to maintain consistent typescript standards across Assemble projects. This package extends the recommended settings with some minor adjustments for team preferences.
+The ASMBL TypeScript configuration file is used to maintain consistent typescript standards across ASMBL projects. This package extends the recommended settings with some minor adjustments for team preferences.
 
 ## Contributing <a id='contributing'></a>
 
