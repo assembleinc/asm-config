@@ -1,20 +1,20 @@
 Assemble Inc. Frontend Code Standards
 
-## This repository contains resources for ensuring consistency and quality across different Assemble projects.
+## This repository contains resources for ensuring consistency and quality across different ASMBL projects.
 
 ### ESLint Configuration
 
-Assemble has developed a custom ESLint configuration file that should be used on all greenfield Assemble Projects. This package extends ESLint recommended settings with some specific modifications selected by the Assemble dev team. You can read more [here](./eslint-config/README.md).
+ASMBL has developed a custom ESLint configuration file that should be used on all greenfield ASMBL Projects. This package extends ESLint recommended settings with some specific modifications selected by the ASMBL dev team. You can read more [here](./eslint-config/README.md).
 
 ### Prettier Configuration
 
-The Assemble prettier configuration and editor configuration files are used to maintain consistent coding style across Assemble projects. This package extends the recommended settings with some minor adjustments for team preferences. You can read more [here](./prettier-config/README.md).
+The ASMBL prettier configuration and editor configuration files are used to maintain consistent coding style across ASMBL projects. This package extends the recommended settings with some minor adjustments for team preferences. You can read more [here](./prettier-config/README.md).
 
 ### Tailwind Configuration
-The Assemble Tailwind configuration files is used to maintain consistent coding style across Assemble tailwind projects. This package extends the recommended settings with some minor adjustments for team preferences.
+The ASMBL Tailwind configuration files is used to maintain consistent coding style across Assemble tailwind projects. This package extends the recommended settings with some minor adjustments for team preferences.
 
 ### TSConfig
-The Assemble TypeScript configuration file is used to maintain consistent typescript standards across Assemble projects. This package extends the recommended settings with some minor adjustments for team preferences.
+The ASMBL TypeScript configuration file is used to maintain consistent typescript standards across Assemble projects. This package extends the recommended settings with some minor adjustments for team preferences.
 
 ## Contributing <a id='contributing'></a>
 
