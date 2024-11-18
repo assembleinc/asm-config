@@ -2,7 +2,11 @@
 
 module.exports = {
   root: true,
-  parser: "@babel/eslint-parser",
+  parser: "@typescript-eslint/parser",
+  ignorePatterns: ["/*.*", "*.d.ts"],
+  env: {
+    node: true,
+  },
   parserOptions: {
     sourceType: "module",
     requireConfigFile: false,
@@ -13,29 +17,39 @@ module.exports = {
   },
   extends: [
     "eslint:recommended",
-    "react-app",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:react-hooks/recommended",
+    "plugin:import/recommended",
   ],
-  plugins: ["jsx-a11y", "simple-import-sort", "autofix"],
-  ignorePatterns: ["/*.*"],
-  env: {
-    node: true,
-  },
-  settings: {
-    react: {
-      version: "detect",
-    },
-    "import/resolver": {
-      node: {
-        extensions: [".js", ".jsx", ".ts", ".tsx"],
-      },
-    },
-  },
+  plugins: ["@typescript-eslint", "simple-import-sort", "autofix"],
   rules: {
     // "func-prefix-matching": {
     //   create: onFuncPrefixMatchingCreate,
     // },
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/no-shadow": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "react/jsx-filename-extension": "off",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        ts: "never",
+        tsx: "never",
+      },
+    ],
+    "no-shadow": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off",
     "react/self-closing-comp": [
       "error",
       {
@@ -43,14 +57,9 @@ module.exports = {
         html: true,
       },
     ],
-    "autofix/no-unused-vars": [
-      "error",
-      {
-        argsIgnorePattern: "^_",
-        ignoreRestSiblings: true,
-        destructuredArrayIgnorePattern: "^_",
-      },
-    ],
+    "autofix/no-unused-vars": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["error"],
     "import/order": [
       "error",
       {
@@ -79,7 +88,6 @@ module.exports = {
     "no-non-null-assertion": "off",
     camelcase: "off",
     "no-restricted-globals": "off",
-    "jsx-a11y/no-onchange": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -158,5 +166,16 @@ module.exports = {
     "wrap-iife": "off",
     "wrap-regex": "off",
     "yield-star-spacing": "off",
+  },
+  settings: {
+    react: {
+      version: "detect",
+    },
+    "import/resolver": {
+      typescript: {},
+      node: {
+        extensions: [".js", ".jsx", ".ts", ".tsx"],
+      },
+    },
   },
 };

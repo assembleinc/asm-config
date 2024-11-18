@@ -1,6 +1,6 @@
 {
-  "version": "0.2.0",
-  "name": "@assemble-inc/eslint-config-asm",
+  "version": "0.1.9",
+  "name": "@assemble-inc/eslint-config-ts",
   "main": "index.js",
   "description": "Assemble front-end linting and formatting rules",
   "author": "Assemble Frontend Team <engineering@assembleinc.com> (https://assembleinc.com)",
@@ -24,23 +24,19 @@
     "publish:package": "npm test; npm publish;"
   },
   "dependencies": {
-    "@assemble-inc/prettier-config-asm": "0.1.13",
     "@babel/core": "^7.26.0",
-    "@babel/eslint-parser": "^7.25.9",
     "@babel/plugin-syntax-flow": "^7.26.0",
     "@typescript-eslint/eslint-plugin": "^8.14.0",
     "@typescript-eslint/parser": "^8.14.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^8.0.0 || ^9.0.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-config-react-app": "^7.0.1",
     "eslint-import-resolver-typescript": "^3.6.3",
     "eslint-plugin-autofix": "^2.2.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-simple-import-sort": "^12.1.1",
-    "eslint-plugin-testing-library": "^6.4.0",
-    "prettier": ">=2.0.0 || >=3.0.0",
     "typescript": "^5.6.3"
   },
   "devDependencies": {

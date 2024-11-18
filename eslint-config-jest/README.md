@@ -1,24 +1,22 @@
 # ASMBL ESLint Configuration
 
-This package contains ASMBL's ESLint configurations for JavaScript projects.
+This package contains ASMBL's ESLint configurations for testing within projects.
 
 ESLint is used for enforcement of code quality across ASMBL projects.
-
-All ESLint rules enforcing code style have been ~~disabled in favor of using prettier for code formatting~~ deprecated.
 
 ## Installation
 
 From the root of your package, install the ASMBL configuration:
 
-`yarn add --dev @assemble-inc/eslint-config-asm`
+`yarn add --dev @assemble-inc/eslint-config-jest`
 
 or
 
-`pnpm add --dev @assemble-inc/eslint-config-asm`
+`pnpm add --dev @assemble-inc/eslint-config-jest`
 
 or
 
-`bun add --dev @assemble-inc/eslint-config-asm`
+`bun add --dev @assemble-inc/eslint-config-jest`
 
 ## Configuration
 
@@ -28,19 +26,21 @@ Add the following scripts to your `package.json`.
 
 ```
 "scripts": {
-  "lint": "eslint \"src/**/*.{jsx,js}\"",
-  "lint:fix": "eslint \"src/**/*.{jsx,js}\" --fix"
+  "lint": "eslint \"src/**/*.{test.jsx,test.js,test.ts,test.tsx}\"",
+  "lint:fix": "eslint \"src/**/*.{test.jsx,test.js,test.ts,test.tsx}\" --fix",
 },
 ```
 
-### Import the linting configuration
+> You can update the file directories to suit the particular files you would like to lint.
 
-The ASMBL configuration needs to be imported into ESLint. Add the following to your `package.json`.
+### Import the linting configurations
+
+The ASMBL. configuration needs to be imported into ESLint. Add the following to your `package.json`.
 
 ```
   "eslintConfig": {
     "extends": [
-      "@assemble-inc/eslint-config-asm"
+      "@assemble-inc/eslint-config-jest"
     ],
     "env": {
       "browser": true,

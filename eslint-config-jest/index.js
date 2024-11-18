@@ -16,22 +16,9 @@ module.exports = {
     "react-app",
     "plugin:jsx-a11y/recommended",
     "plugin:react-hooks/recommended",
+    "prettier",
   ],
-  plugins: ["jsx-a11y", "simple-import-sort", "autofix"],
-  ignorePatterns: ["/*.*"],
-  env: {
-    node: true,
-  },
-  settings: {
-    react: {
-      version: "detect",
-    },
-    "import/resolver": {
-      node: {
-        extensions: [".js", ".jsx", ".ts", ".tsx"],
-      },
-    },
-  },
+  plugins: ["simple-import-sort", "autofix"],
   rules: {
     // "func-prefix-matching": {
     //   create: onFuncPrefixMatchingCreate,
@@ -79,7 +66,6 @@ module.exports = {
     "no-non-null-assertion": "off",
     camelcase: "off",
     "no-restricted-globals": "off",
-    "jsx-a11y/no-onchange": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -158,5 +144,90 @@ module.exports = {
     "wrap-iife": "off",
     "wrap-regex": "off",
     "yield-star-spacing": "off",
+  },
+  ignorePatterns: ["/*.*"],
+  env: {
+    node: true,
+  },
+  overrides: [
+    {
+      files: ["*.ts", "*.tsx"],
+      extends: [
+        "eslint:recommended",
+        "react-app",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:jsx-a11y/recommended",
+        "prettier",
+      ],
+      parser: "@typescript-eslint/parser",
+      plugins: ["@typescript-eslint", "simple-import-sort"],
+      rules: {
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-use-before-define": ["error"],
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/ban-ts-comment": "off",
+        "@typescript-eslint/no-shadow": "off",
+        "@typescript-eslint/no-non-null-assertion": "off",
+        "react/jsx-filename-extension": "off",
+        "import/extensions": [
+          "error",
+          "ignorePackages",
+          {
+            ts: "never",
+            tsx: "never",
+          },
+        ],
+        "no-shadow": "off",
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "react/prop-types": "off",
+      },
+      settings: {
+        "import/resolver": {
+          typescript: {},
+        },
+      },
+    },
+    {
+      files: ["*.test.js, *.test.jsx"],
+      parser: "@babel/eslint-parser",
+      plugins: ["testing-library", "jest"],
+      extends: [
+        "plugin:testing-library/react",
+        "react-app/jest",
+        "plugin:jest/recommended",
+      ],
+      parserOptions: {
+        ecmaVersion: 2019,
+        sourceType: "module",
+        requireConfigFile: false,
+        babelOptions: {
+          plugins: ["@babel/plugin-proposal-class-properties"],
+        },
+      },
+      rules: {
+        "testing-library/await-async-query": "error",
+        "testing-library/no-await-sync-query": "error",
+        "testing-library/no-debugging-utils": "warn",
+        "testing-library/no-dom-import": "off",
+      },
+      env: {
+        es6: true,
+        node: true,
+        "jest/globals": true,
+      },
+    },
+  ],
+  settings: {
+    react: {
+      version: "detect",
+    },
+    "import/resolver": {
+      node: {
+        extensions: [".js", ".jsx", ".ts", ".tsx"],
+      },
+    },
   },
 };
