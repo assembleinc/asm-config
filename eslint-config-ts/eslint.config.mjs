@@ -1,10 +1,10 @@
 import eslint from '@eslint/js';
-import tseslint from 'typescript-eslint';
+import autofixPlugin from 'eslint-plugin-autofix';
 import importPlugin from 'eslint-plugin-import';
+import jsxA11y from 'eslint-plugin-jsx-a11y';
 import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
-import jsxA11y from 'eslint-plugin-jsx-a11y';
-import autofixPlugin from 'eslint-plugin-autofix';
+import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
   eslint.configs.recommended,
@@ -67,14 +67,6 @@ export default tseslint.config(
         {
           component: true,
           html: true,
-        },
-      ],
-      "import/extensions": [
-        "error",
-        "ignorePackages",
-        {
-          ts: "never",
-          tsx: "never",
         },
       ],
       "import/extensions": [
