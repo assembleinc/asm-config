@@ -15,7 +15,7 @@ echo -ne "  readme: "
 if [ ! -f ./README.md ]; then echo -e "${RED}Not Found${NC}" && exit 1; else echo -e "${GREEN}Found${NC}"; fi
 
 echo "Checking ESlint Config Required Files"
-echo -ne "  index: "
-if [ ! -f ./index.js ]; then echo -e "${RED}Not Found${NC}" && exit 1; else echo -e "${GREEN}Found${NC}"; fi
+echo -ne "  eslint.config.mjs: "
+if [ ! -f ./eslint.config.mjs ]; then echo -e "${RED}Not Found${NC}" && exit 1; else echo -e "${GREEN}Found${NC}"; fi
 echo -ne "  package.json: "
 if [ ! -f ./package.json ]; then echo -e "${RED}Not Found${NC}" && exit 1; else echo -e "${GREEN}Found${NC}"; fi

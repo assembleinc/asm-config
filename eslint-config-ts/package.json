@@ -1,7 +1,7 @@
 {
   "version": "0.1.9",
   "name": "@assemble-inc/eslint-config-ts",
-  "main": "index.js",
+  "main": "eslint.config.mjs",
   "description": "Assemble front-end linting and formatting rules",
   "author": "Assemble Frontend Team <engineering@assembleinc.com> (https://assembleinc.com)",
   "license": "ISC",
@@ -17,27 +17,23 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=16.0.0"
+    "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
   },
   "scripts": {
     "test": "bash ./verifyArtifacts.sh",
     "publish:package": "npm test; npm publish;"
   },
   "dependencies": {
-    "@babel/core": "^7.26.0",
-    "@babel/plugin-syntax-flow": "^7.26.0",
-    "@typescript-eslint/eslint-plugin": "^8.14.0",
-    "@typescript-eslint/parser": "^8.14.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^8.0.0 || ^9.0.0",
-    "eslint-import-resolver-typescript": "^3.6.3",
+    "eslint": "^9.19.0",
+    "eslint-import-resolver-typescript": "^3.7.0",
     "eslint-plugin-autofix": "^2.2.0",
     "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-react-hooks": "^4.6.2",
-    "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-simple-import-sort": "^12.1.1",
-    "typescript": "^5.6.3"
+    "typescript": "^5.6.2",
+    "typescript-eslint": "^8.23.0"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.9"
