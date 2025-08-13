@@ -4,14 +4,13 @@ This package contains ASMBL's ESLint configurations for Typescript projects.
 
 ESLint is used for enforcement of code quality across ASMBL projects.
 
-All ESLint rules enforcing code style have been ~~disabled in favor of using prettier for code formatting~~ deprecated.
-
 ## Installation
 
 From the root of your package, install the ASMBL configuration:
 
+`npm i --D @assemble-inc/eslint-config-ts`
 `yarn add --dev @assemble-inc/eslint-config-ts`
-`pnpm add --dev @assemble-inc/eslint-config-ts`
+`pnpm i --dev @assemble-inc/eslint-config-ts`
 `bun add --dev @assemble-inc/eslint-config-ts`
 
 ## Configuration
@@ -31,21 +30,14 @@ Add the following scripts to your `package.json`.
 
 ### Import the linting configurations
 
-The ASMBL configuration needs to be imported into ESLint. Add the following to your `package.json`.
+This package uses the new ESLint flat file configuration. Add the following to your `eslint.config.mjs` to extend the ASMBL configuration.
 
 ```
-  "eslintConfig": {
-    "extends": [
-      "@assemble-inc/eslint-config-ts"
-    ],
-    "env": {
-      "browser": true,
-      "node": true
-    }
-  },
+import asmblConfig from '@assemble-inc/eslint-config-ts';
+export default [
+  ...asmblConfig,
+];
 ```
-
-That's it! No eslint config file required.
 
 ## Usage
 

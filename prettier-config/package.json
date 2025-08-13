@@ -1,7 +1,7 @@
 {
-  "version": "0.1.13",
+  "version": "0.2.0",
   "name": "@assemble-inc/prettier-config-asm",
-  "main": "index.js",
+  "main": "prettier.config.js",
   "description": "Assemble front-end formatting rules",
   "author": "Assemble Frontend Team <engineering@assembleinc.com> (https://assembleinc.com)",
   "license": "MIT",
