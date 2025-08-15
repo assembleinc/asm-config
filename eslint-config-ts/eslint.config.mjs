@@ -89,7 +89,6 @@ export default [
       // IMPORTANT: This one REQUIRES type info → keep OFF in base
       "@typescript-eslint/consistent-type-exports": "off",
 
-      "@typescript-eslint/consistent-type-definitions": ["warn", "type"],
       "@typescript-eslint/no-unused-vars": ["error"],
 
       "no-shadow": "off",
