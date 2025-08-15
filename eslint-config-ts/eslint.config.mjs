@@ -3,7 +3,7 @@ import tseslint from "typescript-eslint";
 import react from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
 import jsxA11y from "eslint-plugin-jsx-a11y";
-import importPlugin from "eslint-plugin-import";
+import importPlugin from "eslint-plugin-import-x";
 import simpleImportSort from "eslint-plugin-simple-import-sort";
 import autofix from "eslint-plugin-autofix";
 
