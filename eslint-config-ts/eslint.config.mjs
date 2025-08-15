@@ -81,16 +81,8 @@ export default [
       "@typescript-eslint/no-non-null-assertion": "off",
       "@typescript-eslint/no-explicit-any": "warn",
       "@typescript-eslint/consistent-type-imports": "warn",
-      "@typescript-eslint/no-unnecessary-condition": "error",
       "@typescript-eslint/no-inferrable-types": "error",
-      "@typescript-eslint/no-unsafe-assignment": "error",
-      "@typescript-eslint/require-array-sort-compare": "error",
-      "@typescript-eslint/prefer-optional-chain": "error",
-      // IMPORTANT: This one REQUIRES type info → keep OFF in base
-      "@typescript-eslint/consistent-type-exports": "off",
-
-      "@typescript-eslint/no-unused-vars": ["error"],
-
+      "@typescript-eslint/consistent-type-definitions": ["warn", "type"],
       "no-shadow": "off",
       "no-unused-vars": "off", // defer to TS rule
       "autofix/no-unused-vars": "off",
@@ -145,6 +137,11 @@ export function typed(options = {}) {
         ...(tseslint.configs.recommendedTypeChecked?.rules ?? {}),
         "@typescript-eslint/consistent-type-exports": "warn",
         "@typescript-eslint/consistent-type-imports": "warn",
+        "@typescript-eslint/no-unnecessary-condition": "error",
+        "@typescript-eslint/no-unsafe-assignment": "error",
+        "@typescript-eslint/prefer-optional-chain": "error",
+        "@typescript-eslint/require-array-sort-compare": "error",
+        "@typescript-eslint/no-unused-vars": ["error"],
       },
     },
   ];
